@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Document",
+            "type": "shell",
+            "command": "./gradlew asciidoctor",
+            "windows": {
+                "command": "./gradlew.bat asciidoctor"
+              },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
